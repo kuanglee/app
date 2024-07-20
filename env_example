@@ -1,1 +1,2 @@
 API_KEY=xxx
+ENDPOINT_API=http://localhost/api/v1

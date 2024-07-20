@@ -36,12 +36,13 @@ app.on('activate', () => {
 ipcMain.on('upload-file', (event, filePath) => {
   console.log('Received file path:', filePath);
   const apiKey = process.env.API_KEY;
+  const url = process.env.ENDPOINT_API;
   const form = new FormData();
   const fileStream = fs.createReadStream(filePath);
   form.append('file_upload', fileStream);
   form.append('api_key', apiKey);
 
-  axios.post('http://localhost/api/v1/import-examinations', form, {
+  axios.post(`${url}/import-examinations`, form, {
     headers: form.getHeaders()
   })
       .then(response => {
