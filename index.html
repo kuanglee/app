@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload File</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .upload-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .upload-btn:hover {
+      background-color: #0056b3;
+    }
+    input[type="file"] {
+      display: none;
+    }
+    .file-label {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border: 2px dashed #007bff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      color: #333;
+      transition: border-color 0.3s;
+    }
+    .file-label:hover {
+      border-color: #0056b3;
+    }
+    .file-name {
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Upload File</h1>
+  <label for="fileInput" class="file-label">Choise file upload</label>
+  <input type="file" id="fileInput" />
+  <button id="uploadBtn" class="upload-btn">Upload</button>
+</div>
+<script src="renderer.js"></script>
+</body>
+</html>

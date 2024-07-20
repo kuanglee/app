@@ -1,0 +1,34 @@
+{
+  "name": "master-electron",
+  "version": "1.0.0",
+  "description": "Master Electron Course Code",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently \"npm:electron\" \"npm:watch\"",
+    "electron": "electron .",
+    "watch": "node watcher.js",
+    "reset": "git reset --hard",
+    "build": "electron-packager ."
+  },
+  "repository": "https://github.com/stackacademytv/master-electron",
+  "keywords": [
+    "Electron",
+    "Master Electron",
+    "demo"
+  ],
+  "author": "GitHub, Stackacademytv",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^23.1.0",
+    "form-data": "^4.0.0",
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "@coding_india/all_in_one_package": "^1.0.13",
+    "axios": "^1.7.2",
+    "chokidar": "^3.6.0",
+    "dotenv": "^16.4.5",
+    "electron-packager": "^17.1.2"
+  }
+}
