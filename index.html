@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Upload File</title>
+  <title>Dental DFC Upload File</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -61,15 +61,22 @@
       margin-top: 10px;
       color: #555;
     }
+
+    #fileName {
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
 <div class="container">
   <h1>Upload File</h1>
   <label for="fileInput" class="file-label">Choise file upload</label>
-  <input type="file" id="fileInput" />
+  <input type="file" id="fileInput" accept=".csv" />
+  <div id="fileName"></div>
+
   <button id="uploadBtn" class="upload-btn">Upload</button>
 </div>
+
 <script src="renderer.js"></script>
 </body>
 </html>

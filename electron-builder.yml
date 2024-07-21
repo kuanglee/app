@@ -1,0 +1,28 @@
+appId: dfc.com
+mac:
+  target:
+    - dmg
+  icon: assets/icons/icon.icns
+  category: public.app-category.developer-tools
+win:
+  target:
+    - nsis
+dmg:
+  icon: assets/icons/icon.icns
+  iconSize: 80
+  contents:
+    - x: 448
+      y: 344
+      type: link
+      path: /Applications
+    - x: 192
+      y: 344
+      type: file
+nsis:
+  oneClick: false
+  perMachine: true
+  allowToChangeInstallationDirectory: true
+  installerIcon: assets/icons/icon.ico
+  uninstallerIcon: assets/icons/icon.ico
+  uninstallDisplayName: DFC app
+  shortcutName: DFC app
