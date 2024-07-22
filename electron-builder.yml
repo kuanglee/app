@@ -7,6 +7,7 @@ mac:
 win:
   target:
     - nsis
+  icon: assets/icons/icon.ico
 dmg:
   icon: assets/icons/icon.icns
   iconSize: 80
